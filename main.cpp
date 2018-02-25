@@ -1,5 +1,5 @@
 #pragma
-#include <iostream> // all output taken out of classes
+#include <iostream> 
 //#include <string>
 //#include "Surgery.h"
 //#include "Pharmacy.h"
