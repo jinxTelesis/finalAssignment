@@ -1,0 +1,30 @@
+PatientAccount
++phar: Pharmacy
++surg: Surgery
+-name: string
+-idNumber: int
+-charges: int
+-numberDays: int
+-dailyRate: int
+
+
++PatientAccount():
++PatientAccount(name: string, idNumber: int, dailyrate: int)
++setIdNumber(idNumber: int): void
++getIdNumber(): int
++setName(name: string): void
++getName(): string
++setDailyRate(dailyRate: int): void
++getDailyRate(): int
++setDaysInHospital(numberDays: int): void
++getDaysInHospital(): int
++setTotalCharges(charges: int):void
++getTotalCharges(): int
++calChargesForStay(): int
++print():void
+
+
+
+
+
+
