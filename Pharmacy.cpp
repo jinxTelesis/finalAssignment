@@ -98,33 +98,33 @@ long Pharmacy::picCharge(char c)// this adds charge for drugs to exist drug char
 
 	switch (cTemp)
 	{
-	case 't': charge = mTylenol;//Tylenol Vitamin R Estrogen Ranitidine Morphine
-		charge += tempcharge;
-		cout << "you are being charged for Tylenol" << endl;
-		return charge;
+		case 't': charge = mTylenol;//Tylenol Vitamin R Estrogen Ranitidine Morphine
+			charge += tempcharge;
+			cout << "you are being charged for Tylenol" << endl;
+			return charge;
 
-	case 'v': charge = mVitaminR;
-		charge += tempcharge;
-		cout << "you are being charged for Vitamin R" << endl;
-		return charge;
+		case 'v': charge = mVitaminR;
+			charge += tempcharge;
+			cout << "you are being charged for Vitamin R" << endl;
+			return charge;
 
-	case 'e': charge = mEstrogen;
-		charge += tempcharge;
-		cout << "you are being charged for Estrogen " << endl;
-		return charge;
+		case 'e': charge = mEstrogen;
+			charge += tempcharge;
+			cout << "you are being charged for Estrogen " << endl;
+			return charge;
 
-	case 'r': charge = mRanitidine;
-		charge += tempcharge;
-		cout << "you are being charged for Ranitidine " << endl;
-		return charge;
+		case 'r': charge = mRanitidine;
+			charge += tempcharge;
+			cout << "you are being charged for Ranitidine " << endl;
+			return charge;
 
-	case 'm': charge = mMorphine;
-		charge += tempcharge;
-		cout << "you are being charged for Morphine " << endl;
-		return charge;
+		case 'm': charge = mMorphine;
+			charge += tempcharge;
+			cout << "you are being charged for Morphine " << endl;
+			return charge;
 
-	default:
-		return charge;
+		default:
+			return charge;
 	}
 
 }
