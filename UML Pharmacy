@@ -1,0 +1,25 @@
+Pharmacy
+
+-mTylenol: int
+-mVitaminR: int
+-mEstrogen: int
+-mRanitidine: int
+-mMprphine: int
++ charge: int
+
++Pharmacy():
++Pharmacy(Tyl: int, Vit: int, Est: int, Ran: int, Mor: int)
++getTyl(): int
++setTyle(tyl: int): void
++getVit(): int
++setVit(vit: int): void
++getEst(): int
++setEst(est: int): void
++getRanit(): int
++setRanit(ran: int): void
++getMorp(): int
++setMorp(mor: int): void
+
++getCharge(): int
++picCharge(c: char): int
+
