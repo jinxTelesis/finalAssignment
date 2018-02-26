@@ -7,7 +7,7 @@
 
 using namespace std;
 
-PatientAccount::PatientAccount()
+PatientAccount::PatientAccount() // constructor defaults used in main
 {
 	name = "";
 	idNumber = 0;
