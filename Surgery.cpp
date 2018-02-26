@@ -18,7 +18,7 @@ Surgery::Surgery() // default constructor
 	mLiverTrCost = 5000;
 }
 
-Surgery::Surgery(int Amp, int Recap, int Srs, int Bio, int LiverTr) // overloaded not used in main
+Surgery::Surgery(long Amp, long Recap, long Srs, long Bio, long LiverTr) // overloaded not used in main
 {
 	//mSurgeryType = ""; // remove
 	//mAmputation = "Amputation"; // 1st surgery
@@ -33,32 +33,32 @@ Surgery::Surgery(int Amp, int Recap, int Srs, int Bio, int LiverTr) // overloade
 	mLiverTrCost = LiverTr;
 }
 
-int Surgery::getAmp() // getters and setters with some validation
+long Surgery::getAmp() // getters and setters with some validation
 {
 	return mAmpCost; // can set surgery and medication costs in main for advanced users
 }
 
-int Surgery::getRecap()
+long Surgery::getRecap()
 {
 	return mRecapCost;
 }
 
-int Surgery::getSrs()
+long Surgery::getSrs()
 {
 	return mSrsCost;
 }
 
-int Surgery::getBiospy()
+long Surgery::getBiospy()
 {
 	return mBiopCost;
 }
 
-int Surgery::getLiverTr()
+long Surgery::getLiverTr()
 {
 	return mLiverTrCost;
 }
 
-void Surgery::setAmp(int amp)
+void Surgery::setAmp(long amp)
 {
 	if (amp > 1)
 		mAmpCost = amp;
@@ -66,7 +66,7 @@ void Surgery::setAmp(int amp)
 		mAmpCost = 1;
 }
 
-void Surgery::setRecap(int recap)
+void Surgery::setRecap(long recap)
 {
 	if (recap > 0)
 		mRecapCost = recap;
@@ -74,7 +74,7 @@ void Surgery::setRecap(int recap)
 		mRecapCost = 1;
 }
 
-void Surgery::setSrs(int srs)
+void Surgery::setSrs(long srs)
 {
 	if (srs > 0)
 		mSrsCost = srs;
@@ -82,7 +82,7 @@ void Surgery::setSrs(int srs)
 		mSrsCost = 1;
 }
 
-void Surgery::setBiospy(int bio)
+void Surgery::setBiospy(long bio)
 {
 	if (bio > 0)
 		mBiopCost = bio;
@@ -90,7 +90,7 @@ void Surgery::setBiospy(int bio)
 		mBiopCost = 1;
 }
 
-void Surgery::setLiverTr(int liv)
+void Surgery::setLiverTr(long liv)
 {
 	if (liv > 0)
 		mLiverTrCost = liv;
@@ -98,11 +98,11 @@ void Surgery::setLiverTr(int liv)
 		mLiverTrCost = 1;
 }
 
-int Surgery::picCharge(char c) // a r l b s
+long Surgery::picCharge(char c) // a r l b s
 {
 	char cTemp;
 	cTemp = tolower(c);
-	int tempcharge = charge; // picks a surgery to charge to adds to existing charge for sugery
+	long tempcharge = charge; // picks a surgery to charge to adds to existing charge for sugery
 
 	switch (cTemp)
 	{
@@ -137,15 +137,13 @@ int Surgery::picCharge(char c) // a r l b s
 
 
 	default:
-		charge = 0;
-		cout << "invalid selection or no surgery added";
 		return charge;
 	}
 
 }
 
 
-int Surgery::getCharge() // returns total charge
+long Surgery::getCharge() // returns total charge
 {
 	return charge;
 }
