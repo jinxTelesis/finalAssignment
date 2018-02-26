@@ -25,7 +25,7 @@ int Pharmacy::getTyl() // list of getters and setters with limited validation
 	return mTylenol;
 }
 
-void Pharmacy::setTyl(int tyl) // some class validation
+void Pharmacy::setTyl(int tyl)
 {
 	if (tyl > 1)
 		mTylenol = tyl;
@@ -89,12 +89,12 @@ void Pharmacy::setMorp(int mor)
 		mMorphine = 1;
 }
 
-int Pharmacy::picCharge(char c)// this adds charge for drugs to exist drug charge will not multiply by daily rate
+long Pharmacy::picCharge(char c)// this adds charge for drugs to exist drug charge will not multiply by daily rate
 {
 	char cTemp;   
 	//int charge;
 	cTemp = tolower(c);
-	int tempcharge = charge; // temp var so charge adds correctly
+	long tempcharge = charge;
 
 	switch (cTemp)
 	{
@@ -124,13 +124,12 @@ int Pharmacy::picCharge(char c)// this adds charge for drugs to exist drug charg
 		return charge;
 
 	default:
-		charge = 0;
 		return charge;
 	}
 
 }
 
-int Pharmacy::getCharge()
+long Pharmacy::getCharge()
 {
 	return charge;
 }
