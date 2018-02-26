@@ -106,38 +106,38 @@ long Surgery::picCharge(char c) // a r l b s
 
 	switch (cTemp)
 	{
-	case 'a': charge = mAmpCost;
-		cout << "you're being charged for an Amputation" << endl;
-		charge += tempcharge; // will add it to previous charge
-		return charge;
+		case 'a': charge = mAmpCost;
+			cout << "you're being charged for an Amputation" << endl;
+			charge += tempcharge; // will add it to previous charge
+			return charge;
 
 
-	case 'r': charge = mRecapCost;
-		cout << "you're being charged for a Recapitation" << endl;
-		charge += tempcharge;
-		return charge;
+		case 'r': charge = mRecapCost;
+			cout << "you're being charged for a Recapitation" << endl;
+			charge += tempcharge;
+			return charge;
 
 
-	case 'l': charge = mLiverTrCost;
-		cout << "you're being charged for a liver transplant " << endl;
-		charge += tempcharge;
-		return charge;
+		case 'l': charge = mLiverTrCost;
+			cout << "you're being charged for a liver transplant " << endl;
+			charge += tempcharge;
+			return charge;
 
 
-	case 'b': charge = mBiopCost;
-		cout << "you're being charged for a biopsy" << endl;
-		charge += tempcharge;
-		return charge;
+		case 'b': charge = mBiopCost;
+			cout << "you're being charged for a biopsy" << endl;
+			charge += tempcharge;
+			return charge;
 
 
-	case 's': charge = mSrsCost;
-		cout << "You're being charged for sexual reassignment surgery " << endl;
-		charge += tempcharge;
-		return charge;
+		case 's': charge = mSrsCost;
+			cout << "You're being charged for sexual reassignment surgery " << endl;
+			charge += tempcharge;
+			return charge;
 
 
-	default:
-		return charge;
+		default:
+			return charge;
 	}
 
 }
@@ -170,3 +170,4 @@ cout << "total: " << totalcost1 << endl;
 cout << "\n";
 }
 */
+
