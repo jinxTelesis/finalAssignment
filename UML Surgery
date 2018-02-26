@@ -1,0 +1,23 @@
+Surgery
+
+-mAmpCost: int
+-mRecapCost: int
+-mSrsCost: int
+-mBiopCost: int
+-mLiverTrCost: int
++charge: int
+
++Surgery():
++Surgery(Amp: int, Recap: int, Srs: int, Bio: int, LivertrL int)
++getAmp(): int
++setAmp(amp: int): void
++getRecap(): int
++setRecap(recap: int): void
++getSrs(): int
++setSrs(srs: int): void
++getLiverTr(): int
++setLiverTr(liv: int): void
++getCharge(): int
++picCharge(c: char): int
+
+
