@@ -12,31 +12,33 @@ private:
 	//string mSexualReassignement; // 3rd surgery
 	//string mBiopsy; // 4th surgery
 	//string mLivertr; // 5th surgery
-	int mAmpCost;
-	int mRecapCost;
-	int mSrsCost;
-	int mBiopCost;
-	int mLiverTrCost;
+	long mAmpCost;
+	long mRecapCost;
+	long mSrsCost;
+	long mBiopCost;
+	long mLiverTrCost;
 public:
-	int charge = 0;
+	long charge = 0;
 
 	Surgery(); // added
-	Surgery(int Amp, int Recap, int Srs, int Bio, int LiverTr);
-	int getAmp(); // getters and setters to override defaults in main if desired
-	void setAmp(int amp);
-	int getRecap();
-	void setRecap(int recap);
-	int getSrs();
-	void setSrs(int recap);
-	int getBiospy();
-	void setBiospy(int bio);
-	int getLiverTr();
-	void setLiverTr(int liv);
-	int getCharge();
+	Surgery(long Amp, long Recap, long Srs, long Bio, long LiverTr); // realize unsigned better performance but long is easier to type in UML!
+	long getAmp(); // getters and setters to override defaults in main if desired
+	void setAmp(long amp);
+	long getRecap();
+	void setRecap(long recap);
+	long getSrs();
+	void setSrs(long recap);
+	long getBiospy();
+	void setBiospy(long bio);
+	long getLiverTr();
+	void setLiverTr(long liv);
+	
+	long getCharge();
 
-	int picCharge(char c);
+	long picCharge(char c);
 	//float getcost(); 
 	//string getsurgerytype(); 
 	//void getSurgerydisplay(float& totalcost1); 
 };
+
 
