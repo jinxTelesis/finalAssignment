@@ -33,10 +33,8 @@ int main(int argc, char ** argv)
 
 
 	/////// test stuff
-	do {
-		// do you need to use a get to get excess chars // test that quicky
-		//cout << "no validation restart if you don't type carefully" << endl; // put in a do while with a flag set to exit and an else statement duh
-		//cout << "didn't say it was requires on the project!" << endl;
+	do 
+	{
 		cout << "enter Patient id as a positive integer under 30000" << endl;
 		cin >> temp;
 		if ((temp > 0) && (temp < 30000)) // validation
@@ -53,7 +51,8 @@ int main(int argc, char ** argv)
 	} while (!menuFlag); // flagging system worked
 	menuFlag = false; // resets
 
-	do {
+	do 
+	{
 		cout << "Enter number of days stayed at hospital as a posative integer under 1000" << endl;
 		cin >> temp;
 		if ((temp > 0) && (temp < 1000))
@@ -72,7 +71,8 @@ int main(int argc, char ** argv)
 	menuFlag = false;
 
 
-	do {
+	do
+	{
 		cout << "Enter the daily rate as a posative integer under 1000 " << endl;
 		cin >> temp;
 		if ((temp > 0) && (temp < 1000))
@@ -90,7 +90,8 @@ int main(int argc, char ** argv)
 	} while (!menuFlag);
 	menuFlag = false;
 
-	do { // this has more complex type checking think about this // test to a r l b s
+	do
+	{ // this has more complex type checking think about this // test to a r l b s
 		cout << "Enter a surgery type as a char" << endl;// a r l b s
 		cout << "a for Amputations, r for Recapitation, l for Liver Transplants " << endl;
 		cout << "b for Biospy and s for Sexual Reassignement Surgery enter n for no surgery" << endl;
@@ -110,7 +111,8 @@ int main(int argc, char ** argv)
 	menuFlag = false;
 
 
-	do {
+	do
+	{
 		cout << "Enter a surgery type as a char" << endl;// a r l b s
 		cout << "a for Amputations, r for Recapitation, l for Liver Transplants " << endl;
 		cout << "b for Biospy and s for Sexual Reassignement Surgery enter n for no surgery" << endl;
@@ -130,7 +132,8 @@ int main(int argc, char ** argv)
 	} while (!menuFlag);
 	menuFlag = false;
 	
-	do {
+	do
+	{
 		cout << "Enter a surgery type as a char" << endl;// a r l b s
 		cout << "a for Amputations, r for Recapitation, l for Liver Transplants " << endl;
 		cout << "b for Biospy and s for Sexual Reassignement Surgery enter n for no surgery" << endl;
@@ -150,7 +153,8 @@ int main(int argc, char ** argv)
 	menuFlag = false;
 
 
-	do {
+	do
+	{
 		cout << "Enter a Drug charge for patient as a char" << endl;
 		cout << "t for Tylenol, v for Vitamin R, e for Estrogen, r for Ranitidine  " << endl;
 		cout << "m for morphine and n for no drugs" << endl;
@@ -169,7 +173,8 @@ int main(int argc, char ** argv)
 	} while (!menuFlag);
 	menuFlag = false;
 
-	do {
+	do
+	{
 		cout << "Enter a Drug charge for patient as a char" << endl;
 		cout << "t for Tylenol, v for Vitamin R, e for Estrogen, r for Ranitidine  " << endl;
 		cout << "m for morphine and n for no drugs" << endl;
@@ -187,7 +192,8 @@ int main(int argc, char ** argv)
 	} while (!menuFlag);
 	menuFlag = false;
 
-	do {
+	do
+	{
 		cout << "Enter a Drug charge for patient as a char" << endl;
 		cout << "t for Tylenol, v for Vitamin R, e for Estrogen, r for Ranitidine  " << endl;
 		cout << "m for morphine and n for no drugs" << endl;
@@ -205,7 +211,8 @@ int main(int argc, char ** argv)
 	} while (!menuFlag);
 	menuFlag = false;
 
-	do {
+	do
+	{
 		cout << "checking out patient unless charge overriden " << endl;
 		cout << "do you want to override current charges of $ " << patientA.calChargesForStay() << endl;
 		cout << "y / n" << endl;
@@ -249,6 +256,8 @@ int main(int argc, char ** argv)
 	system("pause");
 	return 0;
 }
+
+
 
 
 
