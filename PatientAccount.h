@@ -27,15 +27,17 @@ public:
 
 	void setDaysInHospital(int numberDays);
 	int getDaysInHospital();
+										// some validation set in main for this condition
+	void setTotalCharges(long charges); // intentional that input to charges is less than the get// ment for calcharges function // realize might trunk
+	//long long getTotalCharges();
 
-	void setTotalCharges(int charges);
-	int getTotalCharges();
-
-	int calChargesForStay(); // right now using default
+	long long calChargesForStay(); // right now using default
 
 	//void print();
 private:
 	string name;
-	int idNumber, charges, numberDays;
+	int idNumber, numberDays;
+	long long charges;
 	int dailyRate;
 };
+
