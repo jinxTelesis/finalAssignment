@@ -19,19 +19,19 @@ using namespace std;
 
 int main(int argc, char ** argv)
 {
-	//int charge = 0;
-	//char userSelection;
-	//const char MAX_MENU1N2 = '6';
-	//const char MAX_MENU3 = '9';
+	//int charge = 0; // used in other version
+	//char userSelection; // used in other version
+	//const char MAX_MENU1N2 = '6'; // used in other version
+	//const char MAX_MENU3 = '9'; // used in other version
 	PatientAccount patientA; // composite object of phar and surgery and Patient
 	int temp;
 	//int totalfee;
 	string tempstr;
 	char tempchr;
 	/////// test stuff
-	cout << "no validation restart if you don't type carefully" << endl;
-	cout << "didn't say it was requires on the project!" << endl;
-	cout << "enter Patient id as an integer" << endl;
+	cout << "no validation restart if you don't type carefully" << endl; // see other file having very strange problem
+	cout << "didn't say it was requires on the project!" << endl; // why this main was written in a very procedular way
+	cout << "enter Patient id as an integer" << endl; //
 	cin >> temp; 
 	patientA.setIdNumber(temp); // sends output to idNumber in PatientAccount
 	cin.ignore(numeric_limits<streamsize>::max(), '\n'); // used to clear buffer
