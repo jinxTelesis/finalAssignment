@@ -7,7 +7,7 @@
 
 using namespace std;
 
-PatientAccount::PatientAccount() // constructor defaults used in main
+PatientAccount::PatientAccount()
 {
 	name = "";
 	idNumber = 0;
@@ -38,10 +38,11 @@ PatientAccount::PatientAccount(Surgery &surg, Pharmacy &phar, string name, int i
 }
 */
 
-int PatientAccount::calChargesForStay() // won't multiply days or daily rate by rest of number
+long long PatientAccount::calChargesForStay() // won't multiply days or daily rate by rest of number
 {
-	charges = surg.getCharge() + phar.getCharge() + (dailyRate * numberDays);
-	return charges;
+	charges = surg.getCharge() + phar.getCharge() + (dailyRate * numberDays); // overkill on the long long but eh
+	return charges; // book says access other classes should access charges but believe intention was to change the 
+	//appropriate part of charges not the variable itself which is what is done here
 }
 
 void PatientAccount::setDailyRate(int dailyRate) { // sets daily rate
@@ -66,13 +67,13 @@ int PatientAccount::getDaysInHospital() {
 	return numberDays;
 }
 
-void PatientAccount::setTotalCharges(int charges) { // this will override normal calculations intentional
+void PatientAccount::setTotalCharges(long charges) { // this will override normal calculations intentional
 	this->charges = charges;
 }
 
-int PatientAccount::getTotalCharges() {
-	return charges;
-}
+//long long PatientAccount::getTotalCharges() {
+//	return charges;
+//}
 
 void PatientAccount::setIdNumber(int idNumber) { // sets a Patient id number
 	if (idNumber >= 1)
