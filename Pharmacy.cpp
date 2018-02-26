@@ -25,7 +25,7 @@ int Pharmacy::getTyl() // list of getters and setters with limited validation
 	return mTylenol;
 }
 
-void Pharmacy::setTyl(int tyl)
+void Pharmacy::setTyl(int tyl) // some class validation
 {
 	if (tyl > 1)
 		mTylenol = tyl;
@@ -94,7 +94,7 @@ int Pharmacy::picCharge(char c)// this adds charge for drugs to exist drug charg
 	char cTemp;   
 	//int charge;
 	cTemp = tolower(c);
-	int tempcharge = charge;
+	int tempcharge = charge; // temp var so charge adds correctly
 
 	switch (cTemp)
 	{
