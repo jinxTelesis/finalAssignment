@@ -7,15 +7,15 @@ class Pharmacy
 {
 private:
 	int mTylenol; //t v e r m
-	int mVitaminR;
-	int mEstrogen;
+	int mVitaminR; // convention often for private vars
+	int mEstrogen; // know its not used in book but convention often used in example programs ive seen, (3 other books)
 	int mRanitidine;
 	int mMorphine;
-	float medCost;
+	float medCost;// know its not used in book but convention often used in example programs ive seen, (3 other books)
 	string medName;
 
 public:
-	int charge = 0;
+	long charge = 0;
 	Pharmacy(); // added
 	Pharmacy(int Tyl, int Vit, int Est, int Ran, int Mor); // if you want to change default surgery values for a special sale!
 	int getTyl(); // list of getters and setters to override default value for advanced users in main
@@ -29,10 +29,11 @@ public:
 	int getMorp();
 	void setMorp(int mor);
 
-	int getCharge(); // needs value first
+	long getCharge(); 
 
-	int picCharge(char c);
+	long picCharge(char c);
 	//Pharmacy(float, string);
 	//float getMedCost();
 	//string getMedName();
 };
+
