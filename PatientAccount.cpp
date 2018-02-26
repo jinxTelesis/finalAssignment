@@ -86,7 +86,7 @@ int PatientAccount::getIdNumber() {
 	return idNumber;
 }
 
-void PatientAccount::setGetName(string name) {
+void PatientAccount::setName(string name) {
 	this->name = name;
 }
 
