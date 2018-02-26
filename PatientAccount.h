@@ -19,7 +19,7 @@ public:
 	void setIdNumber(int idNumber);
 	int getIdNumber();
 
-	void setGetName(string name);
+	void setName(string name);
 	string getName();
 
 	void setDailyRate(int dailyRate);
