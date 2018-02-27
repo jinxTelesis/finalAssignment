@@ -1,23 +1,23 @@
 Surgery
 
--mAmpCost: int
--mRecapCost: int
--mSrsCost: int
--mBiopCost: int
--mLiverTrCost: int
-+charge: int
+-mAmpCost: long
+-mRecapCost: long
+-mSrsCost: long
+-mBiopCost: long
+-mLiverTrCost: long
++charge: long
 
 +Surgery():
-+Surgery(Amp: int, Recap: int, Srs: int, Bio: int, LivertrL int)
-+getAmp(): int
++Surgery(Amp: long, Recap: long, Srs: long, Bio: long, LivertrL long)
++getAmp(): long
 +setAmp(amp: int): void
-+getRecap(): int
++getRecap(): long
 +setRecap(recap: int): void
-+getSrs(): int
++getSrs(): long
 +setSrs(srs: int): void
-+getLiverTr(): int
++getLiverTr(): long
 +setLiverTr(liv: int): void
-+getCharge(): int
-+picCharge(c: char): int
++getCharge(): long
++picCharge(c: char): long
 
 
