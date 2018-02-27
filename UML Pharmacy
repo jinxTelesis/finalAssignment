@@ -20,6 +20,6 @@ Pharmacy
 +getMorp(): int
 +setMorp(mor: int): void
 
-+getCharge(): int
-+picCharge(c: char): int
++getCharge(): long
++picCharge(c: char): long
 
