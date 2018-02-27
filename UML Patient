@@ -3,7 +3,7 @@ PatientAccount
 +surg: Surgery
 -name: string
 -idNumber: int
--charges: int
+-charges: long long
 -numberDays: int
 -dailyRate: int
 
@@ -18,9 +18,9 @@ PatientAccount
 +getDailyRate(): int
 +setDaysInHospital(numberDays: int): void
 +getDaysInHospital(): int
-+setTotalCharges(charges: int):void
-+getTotalCharges(): int
-+calChargesForStay(): int
++setTotalCharges(charges: long):void
++getTotalCharges(): long
++calChargesForStay(): long long
 +print():void
 
 
